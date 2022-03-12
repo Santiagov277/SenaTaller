@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/Plata.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/ejercicio3.css">
+    <script src="js/calculo.js"></script>
+    <title>Ejercicio 3</title>
+</head>
+
+<body>
+
+    <div id="window">
+
+        <div id="title-bar">
+            <div id="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+                <h5>Calculodeporcentaje.exe</h5>
+                <a href="index.html">Inicio</a>
+            </div>
+        </div>
+
+        <div id="window-body" class="mydiv">
+            <h1>Calculadora de inverciones</h1>
+
+            <form name="Calculadora" action="" method="post" onsubmit="event.preventDefaut();">
+                <label> Ingresar el valor del primer invercionista </label><br>
+                <input type="number" name="inv1" placeholder="  Valor de la invercion $"><br>
+
+                <label> Ingresar el valor del segundo invercionista </label><br>
+                <input type="number" name="inv2" placeholder="  Valor de la invercion $"><br>
+
+                <label> Ingresar el valor del tercer invercionista </label><br>
+                <input type="number" name="inv3" placeholder="  Valor de la invercion $"><br>
+
+                <label>Resultado cliente 1</label><br>
+                <input type="text" name="inputtext1" disabled><br>
+                <label>Resultado cliente 2</label><br>
+                <input type="text" name="inputtex2" disabled><br>
+                <label>Resultado cliente 3</label><br>
+                <input type="text" name="inputtext3" disabled><br>
+
+                <input type="button" value="CALCULAR" onclick="calculariver();">
+                <input type="reset" value="BORRAR" onclick="alerborrar();">
+            </form>
+
+</body>
+
+</html>

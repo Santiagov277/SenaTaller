@@ -1,0 +1,150 @@
+       * {
+           box-sizing: border-box;
+           padding: 0;
+           margin: 0;
+           border: 0;
+           background-size: cover;
+       }
+       
+       body {
+           font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+           width: 100vw;
+           height: 100vh;
+           display: flex;
+           background: url(https://i.postimg.cc/tg8LwCQk/Como-motivar-a-un-vendedor.jpg) no-repeat;
+           background-size: cover;
+       }
+       
+       h1 {
+           font-size: 38px;
+       }
+       
+       a {
+           margin-right: 0%;
+           margin-left: 350px;
+           color: #a606f0;
+       }
+       
+       input[type="text"] {
+           font-size: 18px;
+           color: rgb(0, 0, 0);
+           font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+           box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.048);
+           text-align: left;
+           width: 370px;
+           /* From https://css.glass */
+           background: rgba(255, 255, 255, 0.2);
+           border-radius: 16px;
+           box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+           backdrop-filter: blur(5px);
+           -webkit-backdrop-filter: blur(5px);
+           border: 1px solid rgba(255, 255, 255, 0.3);
+       }
+       
+       input[type="number"] {
+           font-size: 18px;
+           color: rgb(0, 0, 0);
+           font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+           box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.048);
+           text-align: left;
+           width: 370px;
+           /* From https://css.glass */
+           background: rgba(255, 255, 255, 0.2);
+           border-radius: 16px;
+           box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+           backdrop-filter: blur(5px);
+           -webkit-backdrop-filter: blur(5px);
+           border: 1px solid rgba(255, 255, 255, 0.3);
+       }
+       
+       input[type="number"]:hover {
+           cursor: pointer;
+           color: rgb(0, 0, 0);
+           border: 1px solid #7c05b377;
+       }
+       
+       input[type="button"] {
+           font-size: 1em;
+           color: rgb(0, 0, 0);
+           cursor: pointer;
+           padding: .6em 1em;
+           width: 25%;
+           border-radius: 18px;
+           margin-top: 20px;
+           margin-left: auto;
+           text-align: center;
+       }
+       
+       input[type="button"]:hover {
+           cursor: pointer;
+           color: white;
+           background-color: #33c74960;
+           border: 1px solid #33c748;
+       }
+       
+       input[type="reset"] {
+           font-size: 1em;
+           color: rgb(0, 0, 0);
+           cursor: pointer;
+           padding: .6em 1em;
+           width: 25%;
+           border-radius: 18px;
+           margin-top: 20px;
+           margin-left: 40%;
+           text-align: center;
+       }
+       
+       input[type="reset"]:hover {
+           cursor: pointer;
+           color: white;
+           background-color: #f443367a;
+           border: 1px solid #f44336;
+       }
+       /* windows */
+       
+       #window {
+           margin: auto;
+           background-color: #ffffff;
+           border: solid 0.1rem #6e6e6e4d;
+           box-shadow: 0 1rem 3rem #0000004d;
+           border-radius: 0.8rem;
+           overflow: hidden;
+       }
+       /* titebar */
+       
+       #tite-bar {
+           background-color: #f9f4f8;
+           border-bottom: solid 0.1rem #dcdcdc;
+       }
+       
+       #dots {
+           display: flex;
+           flex-direction: row;
+           padding: 1rem;
+       }
+       
+       #dots span {
+           height: 1rem;
+           width: 1rem;
+           margin-right: 0.6rem;
+           background-color: #cacaca;
+           border-radius: 50%;
+       }
+       
+       #dots span:nth-child(1) {
+           background-color: #fc5653;
+       }
+       
+       #dots span:nth-child(2) {
+           background-color: #33c748;
+       }
+       
+       #dots span:nth-child(3) {
+           background-color: #fdb40f;
+       }
+       /* Windows body */
+       
+       #window-body {
+           padding: 2rem 10rem;
+           background-color: #ffffff;
+       }

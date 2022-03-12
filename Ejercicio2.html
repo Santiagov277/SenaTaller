@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/Plata.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/ejercicio2.css">
+    <script src="js/calculo.js"></script>
+    <title>Ejercicio 2</title>
+</head>
+
+<body>
+
+    <div id="window">
+
+        <div id="title-bar">
+            <div id="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+                <h5>Calcularadoradeventa.exe</h5>
+                <a href="index.html">Inicio</a>
+            </div>
+        </div>
+
+        <div id="window-body" class="mydiv">
+            <h1>Calculadora de ventas</h1>
+
+            <form name="Ventasv" action="" method="post" onsubmit="event.preventDefaut();">
+                <label> Ingresar el valor del sueldo </label><br>
+                <input type="number" name="sueldo" placeholder="  Valor en Pesos colombianos $"><br>
+
+                <label> Ingrese el numero de ventas </label><br>
+                <input type="number" name="ventas" placeholder="  Numero de ventas en el mes "><br>
+
+                <label>Total pago del sueldo</label><br>
+                <input type="text" name="inputtext" disabled><br>
+
+                <input type="button" value="CALCULAR" onclick="calcularventas();">
+                <input type="reset" value="BORRAR " onclick="alerborrar();">
+            </form>
+
+</body>
+
+</html>
