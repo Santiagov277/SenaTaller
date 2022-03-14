@@ -33,6 +33,18 @@ function calculariver() {
     window.document.Calculadora.inputtext3.value = Pinv3;
 }
 
+function Fisica() {
+    var vol, pres, tem, calcular1, Ctemperatura;
+    vol = window.document.Calculadorafisica.vol.value;
+    pres = window.document.Calculadorafisica.pres.value;
+    tem = window.document.Calculadorafisica.tem.value;
+
+    Ctemperatura = (0.37 * (parseFloat(tem) + 460));
+    calcular1 = (parseFloat(pres) * parseFloat(vol)) / Ctemperatura;
+
+    window.document.Calculadorafisica.inputtext.value = calcular1;
+}
+
 function alerborrar() {
     alert('Los datos se han borrado correctamente');
 }

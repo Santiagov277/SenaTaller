@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/Plata.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/Bonus.css">
+    <script src="js/calculo.js"></script>
+    <title>Ejercicio 4 - fisica</title>
+</head>
+
+<body>
+
+    <div id="window">
+
+        <div id="title-bar">
+            <div id="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+                <h5>Fisica.exe</h5>
+                <a href="index.html">Inicio</a>
+            </div>
+        </div>
+
+        <div id="window-body" class="mydiv">
+            <h1>Calculodor de presión</h1>
+
+            <form name="Calculadorafisica" action="" method="post" onsubmit="event.preventDefaut();">
+                <label> Ingresar el valor del volumen</label><br>
+                <input type="number" name="vol" placeholder="  Valor del volumen"><br>
+
+                <label> Ingresar el valor de la presión</label><br>
+                <input type="number" name="pres" placeholder="  Valor de la presión"><br>
+
+                <label> Ingresar el valor de la temperatura </label><br>
+                <input type="number" name="tem" placeholder="  Valor de la temperatura"><br>
+
+                <label>Resultado de la ecucación</label><br>
+                <input type="text" name="inputtext" placeholder="  Resultado masa" disabled><br>
+
+                <input type="button" value="CALCULAR" onclick="Fisica();">
+                <input type="reset" value="BORRAR" onclick="alerborrar();">
+            </form>
+
+</body>
+
+</html>
