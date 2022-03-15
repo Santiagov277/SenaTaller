@@ -48,6 +48,26 @@ function Fisica() {
     window.document.Calculadorafisica.inputtext.value = calcular1;
 }
 
+function calcularc() {
+    var cuota, parcela, resultado, restante, incremento, preciofinal, final;
+    cuota = window.document.Colegio.cuota.value;
+    parcela = window.document.Colegio.parcela.value;
+
+
+    resultado = parseFloat(parcela) - parseFloat(cuota);
+    restante = resultado / 24;
+    incremento = restante * 0.20;
+    preciofinal = restante + incremento;
+    final = (preciofinal * 24) + parseFloat(cuota);
+
+
+    window.document.Colegio.inputtext.value = restante;
+    window.document.Colegio.inputtext1.value = incremento;
+    window.document.Colegio.inputtext2.value = preciofinal;
+    window.document.Colegio.inputtext3.value = final;
+
+}
+
 function alerborrar() {
     alert('Los datos se han borrado correctamente');
 }

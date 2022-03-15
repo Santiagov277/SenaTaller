@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardines la paz</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shortcut icon" href="img/list-2389219_640.png" type="image/x-icon">
+    <script src="js/calculo.js"></script>
+
+    <body>
+        <div id="window">
+            <div id="title-bar">
+                <div id="dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <h5>Factura numero #2564</h5>
+
+                </div>
+
+                <div id="window-body" class="mydiv">
+                    <h1>Jardines la paz</h1>
+                    <a href="index.html">Inicio</a>
+
+                    <form name="Colegio" action="" method="post" onsubmit="event.preventDefaut();">
+                        <label> Ingrese su nombre</label><br>
+                        <input type="text" name="Nombre" placeholder=""><br>
+
+                        <label> Ingrese el valor de la parcela </label><br>
+                        <input type="number" name="parcela" placeholder=""><br>
+
+                        <label> Ingrese la cuota inicial </label><br>
+                        <input type="number" name="cuota" placeholder=""><br>
+
+                        <label>Resultado cuotas diferidas</label><br>
+                        <input type="text" name="inputtext" disabled><br>
+
+                        <label>Resultado cuotas 20%</label><br>
+                        <input type="text" name="inputtext1" disabled><br>
+
+                        <label>Precio final</label><br>
+                        <input type="text" name="inputtext2" disabled><br>
+                        <label>Precio final a pagar </label><br>
+                        <input type="text" name="inputtext3" disabled><br>
+
+
+                        <input type="button" value="CALCULAR" onclick="calcularc();">
+                        <input type="reset" value="BORRAR" onclick="alerborrar();">
+
+
+                    </form>
+
+
+                </div>
+            </div>
+
+    </body>
+
+</html>
