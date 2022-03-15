@@ -6,14 +6,17 @@ function calcular() {
 }
 
 function calcularventas() {
-    var sueldo, ventas, calcularventas, calculartotal, calcularsueldo;
+    var sueldo, ventas1, ventas2, ventas3, comision, res;
     sueldo = window.document.Ventasv.sueldo.value;
-    ventas = window.document.Ventasv.ventas.value;
-    calcularsueldo = parseFloat(sueldo) * 0.1;
-    calcularventas = parseFloat(calcularsueldo) * parseFloat(ventas);
-    calculartotal = parseFloat(calcularventas) + parseFloat(sueldo);
+    ventas1 = window.document.Ventasv.ventas1.value;
+    ventas2 = window.document.Ventasv.ventas2.value;
+    ventas3 = window.document.Ventasv.ventas3.value;
 
-    window.document.Ventasv.inputtext.value = calculartotal;
+    comision = (parseFloat(ventas1) + parseFloat(ventas2) + parseFloat(ventas3)) * 0.10;
+    res = parseFloat(sueldo) + parseFloat(comision);
+
+    window.document.Ventasv.comision.value = comision;
+    window.document.Ventasv.inputtext.value = res;
 }
 
 function calculariver() {

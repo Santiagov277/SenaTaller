@@ -29,14 +29,21 @@
             <h1>Calculadora de ventas</h1>
 
             <form name="Ventasv" action="" method="post" onsubmit="event.preventDefaut();">
+
+                <label> Ingrese el valor de la primera venta </label><br>
+                <input type="number" name="ventas1" placeholder="  Valor de la venta $"><br>
+                <label> Ingrese el valor de la segunda venta </label><br>
+                <input type="number" name="ventas2" placeholder="  Valor de la venta $"><br>
+                <label> Ingrese el valor de la tercera venta </label><br>
+                <input type="number" name="ventas3" placeholder="  Valor de la venta $"><br>
+
                 <label> Ingresar el valor del sueldo </label><br>
                 <input type="number" name="sueldo" placeholder="  Valor en Pesos colombianos $"><br>
 
-                <label> Ingrese el numero de ventas </label><br>
-                <input type="number" name="ventas" placeholder="  Numero de ventas en el mes "><br>
-
-                <label>Total pago del sueldo</label><br>
-                <input type="text" name="inputtext" disabled><br>
+                <label>La comision del mes es $</label><br>
+                <input type="text" name="comision" placeholder="  Resultado" disabled><br>
+                <label>El sueldo total es</label><br>
+                <input type="text" name="inputtext" placeholder=" $$$$$$" disabled><br>
 
                 <input type="button" value="CALCULAR" onclick="calcularventas();">
                 <input type="reset" value="BORRAR " onclick="alerborrar();">
